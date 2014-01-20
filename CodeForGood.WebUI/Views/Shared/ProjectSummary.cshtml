@@ -1,0 +1,23 @@
+﻿@model CodeForGood.Domain.Entities.Project
+
+<div class="item">
+    @*@if (Model.ImageData != null)
+    {
+        <div style="float:left;margin-right:20px">
+            <img width="75" height="75" src="@Url.Action("GetImage", "Product", new {Model.ProductID})" />
+        </div>
+    }*@
+    <h3>@Model.ProjectUri</h3>
+    @Model.Category
+    
+    @*@using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        @Html.HiddenFor(x => x.ProjectId)
+        @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+        <input type="submit" value="+ Add To Cart" />
+
+    }
+    <h4>@Model.Price.ToString("c")</h4>*@
+    
+</div>
+

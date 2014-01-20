@@ -1,0 +1,14 @@
+﻿@model CodeForGood.WebUI.Models.ProjectListViewModel
+
+@{
+    ViewBag.Title = "Projects";
+}
+
+@foreach(var p in Model.Projects)
+{
+    Html.RenderPartial("ProjectSummary", p);
+}
+
+<div class="pager">
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new {page = x, category = Model.CurrentCateogry}))
+</div>

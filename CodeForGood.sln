@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeForGood", "CodeForGood\CodeForGood.csproj", "{7DDBA8DA-C823-41FC-834C-133C9FB83C59}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeForGood.Tests", "..\..\Visual Studio 2013\Projects\CodeForGood\CodeForGood.Tests\CodeForGood.Tests.csproj", "{5D087BB8-49A5-417D-99F0-7CD1A76C12D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeForGood.Domain", "CodeForGood.Domain\CodeForGood.Domain.csproj", "{6D1799CA-F8FB-48CD-9EC7-05A0412D047C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EAE59DE2-9DCB-4DC4-9150-6B0E4CFDA3A6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeForGood.WebUI", "CodeForGood.WebUI\CodeForGood.WebUI.csproj", "{7DDBA8DA-C823-41FC-834C-133C9FB83C59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +22,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5D087BB8-49A5-417D-99F0-7CD1A76C12D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5D087BB8-49A5-417D-99F0-7CD1A76C12D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D087BB8-49A5-417D-99F0-7CD1A76C12D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D087BB8-49A5-417D-99F0-7CD1A76C12D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1799CA-F8FB-48CD-9EC7-05A0412D047C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1799CA-F8FB-48CD-9EC7-05A0412D047C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1799CA-F8FB-48CD-9EC7-05A0412D047C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1799CA-F8FB-48CD-9EC7-05A0412D047C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DDBA8DA-C823-41FC-834C-133C9FB83C59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
